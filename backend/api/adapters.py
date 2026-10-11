@@ -49,6 +49,10 @@ def ingest(person_id: str, linkedin_url: str, instagram_url: str):
     fn = _import("ingestion:ingest", "ingestion.provider:ingest", "ingestion.service:ingest", "ingestion.pipeline:ingest")
     if fn is None:
         raise RuntimeError("ingestion.ingest is not available")
+    if linkedin_url.startswith("fixture://") and instagram_url.startswith("fixture://"):
+        from ingestion.providers import FixtureProvider
+
+        return fn(person_id, linkedin_url, instagram_url, provider=FixtureProvider())
     return fn(person_id, linkedin_url, instagram_url)
 
 
