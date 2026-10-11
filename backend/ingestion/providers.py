@@ -79,7 +79,7 @@ class ApifyProvider:
 
     def build_input(self, source: str, url: str, extra: Optional[dict] = None) -> dict:
         if source == "linkedin":
-            body: dict = {"profileUrls": [url]}
+            body: dict = {"profile": url}  # curly/linkedin-profile-scraper: single "profile" string
         elif source == "instagram":
             body = {"usernames": [instagram_handle(url) or ""]}
         else:

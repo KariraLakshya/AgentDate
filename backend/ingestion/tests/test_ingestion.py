@@ -111,7 +111,7 @@ def test_ingest_happy_path_shape_and_drops_extras():
     req = calls[0]
     assert req.headers["authorization"] == "Bearer tok"
     assert req.url.path == "/v2/acts/org~li-public/run-sync-get-dataset-items"
-    assert json.loads(req.content) == {"profileUrls": [LI]}
+    assert json.loads(req.content) == {"profile": LI}
     assert json.loads(calls[1].content) == {"usernames": ["jane.doe"]}
     assert r["source_status"] == {"linkedin": "ok", "instagram": "ok"}
     assert set(r["linkedin"]) == {"headline", "about", "location", "experience", "skills"}
