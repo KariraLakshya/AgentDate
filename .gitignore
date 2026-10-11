@@ -1,5 +1,4 @@
 CLaude.md
-*.md
 .env
 .env.*
 !.env.example
