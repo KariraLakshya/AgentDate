@@ -41,8 +41,10 @@ def _check_netloc(parts):
         raise InvalidURL("bad port")
     if port is not None:
         raise InvalidURL("explicit port not allowed")
-    if parts.query or parts.fragment:
-        raise InvalidURL("query/fragment not allowed")
+    # query / fragment (?hl=en, #...) are dropped: the canonical URL is rebuilt from host + handle only
+
+
+_IG_TABS = {"reels", "tagged", "reel", "posts"}
 
 
 def validate_linkedin_url(url: str) -> str:
@@ -54,7 +56,7 @@ def validate_linkedin_url(url: str) -> str:
     if not _LI_HOST.match(host):
         raise InvalidURL("not a linkedin.com host")
     segs = [s for s in parts.path.split("/") if s != ""]
-    if len(segs) != 2 or segs[0] != "in" or not _LI_SLUG.match(segs[1]):
+    if len(segs) < 2 or segs[0] != "in" or not _LI_SLUG.match(segs[1]):  # trailing /details/... tabs are ignored
         raise InvalidURL("path must be /in/<slug>")
     if ".." in unquote(segs[1]):
         raise InvalidURL("bad slug")
@@ -70,7 +72,9 @@ def validate_instagram_url(url: str) -> str:
     if not _IG_HOST.match(host):
         raise InvalidURL("not an instagram.com host")
     segs = [s for s in parts.path.split("/") if s != ""]
-    if len(segs) != 1 or not _IG_HANDLE.match(segs[0]) or segs[0].lower() in _IG_RESERVED:
+    # trailing profile tabs (/reels/, /tagged/) are ignored; only the handle is used
+    if not segs or len(segs) > 2 or not _IG_HANDLE.match(segs[0]) or segs[0].lower() in _IG_RESERVED or (
+            len(segs) == 2 and segs[1].lower() not in _IG_TABS):
         raise InvalidURL("path must be /<handle>")
     return f"https://www.instagram.com/{segs[0].lower()}"
 

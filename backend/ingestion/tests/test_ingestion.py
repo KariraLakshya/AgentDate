@@ -50,8 +50,8 @@ def test_linkedin_ok(url, canon):
 
 @pytest.mark.parametrize("url", [
     "https://evil.com/in/jane", "https://linkedin.com.evil.com/in/jane", "https://www.linkedin.com/company/x",
-    "https://www.linkedin.com/in/a/b", "https://user:pw@www.linkedin.com/in/jane", "https://www.linkedin.com:8080/in/j",
-    "https://www.linkedin.com/in/jane?x=1", "ftp://www.linkedin.com/in/jane", "http://127.0.0.1/in/jane",
+    "https://user:pw@www.linkedin.com/in/jane", "https://www.linkedin.com:8080/in/j",
+    "ftp://www.linkedin.com/in/jane", "http://127.0.0.1/in/jane",
     "https://www.linkedin.com@evil.com/in/jane", "file:///etc/passwd", "", "https://www.linkedin.com/in/ja ne",
     "https://www.linkedin.com/login",
 ])
@@ -63,10 +63,16 @@ def test_linkedin_rejected(url):
 def test_instagram_validation():
     assert validate_url("https://instagram.com/Jane.Doe/", "instagram") == IG
     for bad in ["https://instagram.com/p/abc", "https://instagram.com/a/b", "https://instagram.com/accounts/login",
-                "https://instagram.com.evil.io/jane", "https://instagram.com/jane?igsh=1", "http://localhost/jane",
+                "https://instagram.com.evil.io/jane", "http://localhost/jane",
                 "https://instagram.com/", "https://instagram.com/a..b"]:
         with pytest.raises(InvalidURL):
             validate_url(bad, "instagram")
+
+
+def test_pasted_links_with_query_and_tabs_are_canonicalised():
+    assert validate_url("https://www.instagram.com/Jane.Doe/reels/?hl=en", "instagram") == IG
+    assert validate_url("https://instagram.com/jane.doe?igsh=1", "instagram") == IG
+    assert validate_url("https://www.linkedin.com/in/jane/details/experience/?x=1", "linkedin") == "https://www.linkedin.com/in/jane"
 
 
 def test_fixture_urls_only_when_allowed():
