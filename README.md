@@ -81,7 +81,8 @@ Put keys in `.env` (git-ignored) and set `LLM_MODE=groq`:
 ## Deploy
 
 - **Frontend (Vercel):** import the repo, set **Root Directory** to `frontend`. `/demo` works with no environment variables. For the live features set `NEXT_PUBLIC_API_URL` to the hosted backend.
-- **Backend:** needs a long-running host with Postgres and Redis (it streams SSE and runs a worker), so it does not fit Vercel. `backend/Dockerfile` and `docker-compose.yml` are ready for Railway, Render or Fly.
+- **Backend (Render, free):** New > Blueprint > pick this repo. `render.yaml` creates the API (built from `backend.Dockerfile`) and a Postgres database. It runs as a single instance (`JOBS_MODE=thread`) so jobs and the SSE stream share one process, and it seeds the synthetic pool on start. It starts in `LLM_MODE=mock`; add `GROQ_API_KEY_STRONG`, `GROQ_API_KEY_FAST` and `APIFY_TOKEN` in the Render dashboard and set `LLM_MODE=groq` to go live. Free web services sleep when idle and free Postgres expires after 30 days. Then set `NEXT_PUBLIC_API_URL` on the Vercel project to the API URL and redeploy the frontend (it is baked in at build time). Set `CORS_ORIGINS` to the frontend URL.
+- Any other Docker host works too: build with `docker build -f backend.Dockerfile .` and provide `DATABASE_URL`.
 
 ## Tests
 
