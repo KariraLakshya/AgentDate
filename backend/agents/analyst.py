@@ -193,6 +193,8 @@ def validate_profile(raw: dict, texts: dict[str, str], fixture: dict | None = No
     traits = {f: _validate_trait(raw.get(f), texts, status) for f in TRAIT_FIELDS}
     gap = raw.get("persona_gap") if isinstance(raw.get("persona_gap"), dict) else {}
     idm = raw.get("identity_match") if isinstance(raw.get("identity_match"), dict) else {}
+    if "not_readable" in status.values():  # a gap needs both sources; do not report a made-up number
+        gap = {"score": 0.0, "description": "Not enough data: the persona gap needs both LinkedIn and Instagram."}
     return Profile(
         summary=str(raw.get("summary", "")),
         linkedin_persona=_validate_persona(raw.get("linkedin_persona"), texts, "linkedin"),
