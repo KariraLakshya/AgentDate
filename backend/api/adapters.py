@@ -88,7 +88,8 @@ def analyze_profile(linkedin: Optional[dict], instagram: Optional[dict], person_
     fn = _import("agents.analyst:analyze")
     if fn is None:
         raise RuntimeError("agents.analyst.analyze is not available")
-    return dump(call_flex(fn, linkedin=linkedin, instagram=instagram, person_id=person_id))
+    # agents.analyst.analyze takes ONE fixture-shaped dict
+    return dump(fn({"linkedin": linkedin, "instagram": instagram}))
 
 
 def referee(record, profile_a, profile_b):
@@ -110,7 +111,19 @@ def run_date(profile_a, profile_b, ids, kind="standard", on_event=None, names=No
                      names=names, date_id=date_id)
 
 
+def _norm_rankings(ctx: dict) -> dict:
+    """agents.briefing wants rows keyed `score`/`name`/`why`; ranking.rank_for_person emits `pair_score`."""
+    rows = ctx.get("rankings")
+    if isinstance(rows, list):
+        names = ctx.get("names") or {}
+        ctx = {**ctx, "rankings": [
+            {**r, "score": r.get("score", r.get("pair_score", 0)), "name": r.get("name") or r.get("display_name") or names.get(r.get("person_id")),
+             "why": r.get("why") or r.get("explanation")} for r in rows]}
+    return ctx
+
+
 def make_briefing(person_id: str, **ctx):
+    ctx = _norm_rankings(ctx)
     fn = _import("agents.briefing:make_briefing")
     if fn is None:
         return None
@@ -122,6 +135,7 @@ def make_briefing(person_id: str, **ctx):
 
 
 def answer_why(person_id: str, question: str, **ctx):
+    ctx = _norm_rankings(ctx)
     fn = _import("agents.briefing:answer_why")
     if fn is None:
         return None
