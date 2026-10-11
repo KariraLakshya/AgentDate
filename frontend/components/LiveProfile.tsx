@@ -1,6 +1,8 @@
 "use client";
 import { FAILED_STATUSES, TERMINAL_STATUSES, api, type PersonRecord } from "@/lib/api";
 import { usePolling } from "@/lib/hooks";
+import { useState } from "react";
+import DeleteMyData from "./DeleteMyData";
 import ProfileView from "./ProfileView";
 import { Empty, ErrorBox, Spinner } from "./ui";
 
@@ -12,12 +14,14 @@ const STEPS: Record<string, string> = {
 };
 
 export default function LiveProfile({ id }: { id: string }) {
+  const [gone, setGone] = useState(false);
   const { data, error, loading } = usePolling(
     () => api<PersonRecord>(`/api/people/${encodeURIComponent(id)}`),
     (p) => (p.profile !== null && TERMINAL_STATUSES.includes(p.status)) || FAILED_STATUSES.includes(p.status) || p.status === "not_readable" || p.status === "deleted",
     2000,
     [id],
   );
+  if (gone) return <Empty>Your data has been deleted. Nothing about you is stored any more.</Empty>;
   if (loading && !data) return <Spinner label="Loading profile..." />;
   if (!data) return <ErrorBox message={error ?? "Profile not found."} />;
   if (data.status === "deleted") return <Empty>This person&rsquo;s data has been deleted.</Empty>;
@@ -33,5 +37,10 @@ export default function LiveProfile({ id }: { id: string }) {
       </div>
     );
   }
-  return <ProfileView personId={data.id} name={data.display_name || "Your profile"} synthetic={data.synthetic} profile={data.profile} />;
+  return (
+    <>
+      <ProfileView personId={data.id} name={data.display_name || "Your profile"} synthetic={data.synthetic} profile={data.profile} />
+      <DeleteMyData personId={data.id} onDeleted={() => setGone(true)} />
+    </>
+  );
 }
