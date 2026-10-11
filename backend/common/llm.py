@@ -59,7 +59,7 @@ class GroqClient:
             "model": model,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "temperature": 0.7,
-            "max_tokens": 2048,
+            "max_tokens": 4096,
         }
         last = None
         for attempt in range(4):

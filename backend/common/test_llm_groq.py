@@ -24,8 +24,8 @@ def test_tier_uses_its_own_key_and_model(monkeypatch):
     c = _client(h, monkeypatch)
     c.complete(system="s", user="u", tier="strong")
     c.complete(system="s", user="u", tier="fast")
-    assert seen[0][0] == "Bearer key-strong" and b"70b" in seen[0][1]
-    assert seen[1][0] == "Bearer key-fast" and b"8b" in seen[1][1]
+    assert seen[0][0] == "Bearer key-strong" and b"120b" in seen[0][1]
+    assert seen[1][0] == "Bearer key-fast" and b"20b" in seen[1][1]
 
 
 def test_rate_limit_fails_over_to_other_key(monkeypatch):

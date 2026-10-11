@@ -12,8 +12,8 @@ ANTHROPIC_MODEL_FAST = os.getenv("ANTHROPIC_MODEL_FAST", "claude-haiku-5-5")
 # Groq (OpenAI-compatible). Two keys so rate limits are spread: STRONG -> analyst/referee/briefing, FAST -> dates.
 GROQ_API_KEY_STRONG = os.getenv("GROQ_API_KEY_STRONG", "")
 GROQ_API_KEY_FAST = os.getenv("GROQ_API_KEY_FAST", "")
-GROQ_MODEL_STRONG = os.getenv("GROQ_MODEL_STRONG", "llama-3.3-70b-versatile")
-GROQ_MODEL_FAST = os.getenv("GROQ_MODEL_FAST", "llama-3.1-8b-instant")
+GROQ_MODEL_STRONG = os.getenv("GROQ_MODEL_STRONG", "openai/gpt-oss-120b")
+GROQ_MODEL_FAST = os.getenv("GROQ_MODEL_FAST", "openai/gpt-oss-20b")
 GROQ_BASE_URL = os.getenv("GROQ_BASE_URL", "https://api.groq.com/openai/v1")
 # "groq" | "anthropic" | "mock"; default: first provider that has a key, else mock
 LLM_MODE = os.getenv("LLM_MODE") or (
