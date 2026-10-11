@@ -116,7 +116,11 @@ class ApifyProvider:
 
 
 def _personas_dir() -> Path:
-    return Path(__file__).resolve().parents[2] / "data" / "personas"
+    here = Path(__file__).resolve()
+    for base in (here.parents[2], here.parents[1]):  # repo checkout, or container layout /app/data
+        if (base / "data" / "personas").is_dir():
+            return base / "data" / "personas"
+    return here.parents[2] / "data" / "personas"
 
 
 class FixtureProvider:

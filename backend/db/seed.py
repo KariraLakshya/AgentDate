@@ -12,7 +12,7 @@ from pathlib import Path
 
 from .store import get_store
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = next((b for b in Path(__file__).resolve().parents[1:3] if (b / "data").is_dir()), Path("."))
 log = logging.getLogger("seed")
 
 

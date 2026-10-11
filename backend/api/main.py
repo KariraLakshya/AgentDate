@@ -20,7 +20,7 @@ from .ratelimit import ip_hash, limiter, limits
 log = logging.getLogger("api")
 
 CONSENT_STATEMENT = "This is me, or I have this person's permission"
-DEMO_PATH = Path(os.getenv("DEMO_PATH") or Path(__file__).resolve().parents[2] / "data" / "demo" / "demo.json")
+DEMO_PATH = Path(os.getenv("DEMO_PATH") or next((b / "data" / "demo" / "demo.json" for b in Path(__file__).resolve().parents[1:3] if (b / "data").is_dir()), Path("data/demo/demo.json")))
 
 app = FastAPI(title="Agentic Dating")
 app.add_middleware(

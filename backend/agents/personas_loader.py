@@ -2,7 +2,11 @@
 import json
 from pathlib import Path
 
-PERSONA_DIR = Path(__file__).resolve().parents[2] / "data" / "personas"
+_here = Path(__file__).resolve()
+PERSONA_DIR = next(
+    (b / "data" / "personas" for b in (_here.parents[2], _here.parents[1]) if (b / "data" / "personas").is_dir()),
+    _here.parents[2] / "data" / "personas",
+)  # repo checkout, or container layout /app/data
 
 
 def load_personas(directory: Path | str | None = None) -> list[dict]:
