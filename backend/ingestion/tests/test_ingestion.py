@@ -111,7 +111,7 @@ def test_ingest_happy_path_shape_and_drops_extras():
     req = calls[0]
     assert req.headers["authorization"] == "Bearer tok"
     assert req.url.path == "/v2/acts/org~li-public/run-sync-get-dataset-items"
-    assert json.loads(req.content) == {"profile": LI}
+    assert json.loads(req.content) == {"profileScraperMode": "Profile details no email ($4 per 1k)", "urls": [LI]}
     assert json.loads(calls[1].content) == {"usernames": ["jane.doe"]}
     assert r["source_status"] == {"linkedin": "ok", "instagram": "ok"}
     assert set(r["linkedin"]) == {"headline", "about", "location", "experience", "skills"}
@@ -281,3 +281,18 @@ def test_purge_raw():
     assert pr["source_status"] == r["source_status"] and r["linkedin"] is not None  # original untouched
     lst = purge_raw(r["raw_sources"])
     assert all(x["payload_json"] is None for x in lst)
+
+
+def test_harvestapi_shape_normalizes_and_drops_extras():
+    from ingestion.normalize import normalize_linkedin
+
+    raw = [{
+        "firstName": "Test", "headline": "Head of Widgets at Example Co", "about": "I build widgets and mentor juniors." * 8,
+        "emails": ["x@example.com"], "connectionsCount": 5, "photo": "http://img",
+        "location": {"linkedinText": "Springfield, US", "parsed": {"city": "Springfield"}},
+        "currentPosition": [{"position": "Head of Widgets", "companyName": "Example Co", "description": "Leads widget team"}],
+    }]
+    data, status, _ = normalize_linkedin(raw)
+    assert status == "ok" and data["location"] == "Springfield, US"
+    assert data["experience"] == [{"title": "Head of Widgets", "company": "Example Co", "description": "Leads widget team"}]
+    assert set(data) == {"headline", "about", "location", "experience", "skills"}  # no emails / photos / counts

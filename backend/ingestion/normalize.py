@@ -57,13 +57,20 @@ def _blocked(item: dict) -> bool:
     return False
 
 
+def _loc(v: Any) -> Any:
+    """harvestapi returns location as {linkedinText, parsed:{...}}; keep only the display text."""
+    if isinstance(v, dict):
+        return v.get("linkedinText") or (v.get("parsed") or {}).get("text") or ""
+    return v
+
+
 def normalize_linkedin(raw: Any) -> tuple[Optional[dict], str, str]:
     item = _pick_item(raw)
     if item is None:
         return None, "not_readable", "empty"
     if _blocked(item):
         return None, "not_readable", "private_or_login_wall"
-    exp_raw = _first(item, "experience", "experiences", "positions", "workExperience") or []
+    exp_raw = _first(item, "experience", "experiences", "positions", "workExperience") or item.get("currentPosition") or []
     experience = []
     if isinstance(exp_raw, list):
         for e in exp_raw[:MAX_EXPERIENCE]:
@@ -86,7 +93,7 @@ def normalize_linkedin(raw: Any) -> tuple[Optional[dict], str, str]:
     data = {
         "headline": _s(_first(item, "headline", "occupation", "title"), 300),
         "about": _s(_first(item, "about", "summary", "bio")),
-        "location": _s(_first(item, "location", "geoLocationName", "addressWithCountry", "city"), 200),
+        "location": _s(_loc(_first(item, "location", "geoLocationName", "addressWithCountry", "city")), 200),
         "experience": experience,
         "skills": skills,
     }

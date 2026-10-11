@@ -79,7 +79,8 @@ class ApifyProvider:
 
     def build_input(self, source: str, url: str, extra: Optional[dict] = None) -> dict:
         if source == "linkedin":
-            body: dict = {"profile": url}  # curly/linkedin-profile-scraper: single "profile" string
+            # harvestapi/linkedin-profile-scraper. Email-search mode is deliberately never used (data minimisation).
+            body: dict = {"profileScraperMode": "Profile details no email ($4 per 1k)", "urls": [url]}
         elif source == "instagram":
             body = {"usernames": [instagram_handle(url) or ""]}
         else:
@@ -110,9 +111,14 @@ class ApifyProvider:
         if resp.status_code >= 400:
             return RawResult(error=f"http_{resp.status_code}")
         try:
-            return RawResult(items=resp.json())
+            items = resp.json()
         except ValueError:
             return RawResult(error="bad_json")
+        if items == []:
+            # An empty dataset is also what actors return when they are temporarily at capacity, so it
+            # is not evidence the page is private. Reported as not_readable but never cached.
+            return RawResult(error="empty_dataset")
+        return RawResult(items=items)
 
 
 def _personas_dir() -> Path:
