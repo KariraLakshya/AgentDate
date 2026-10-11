@@ -45,7 +45,7 @@ def _ingest_source(source: str, url: str, provider, cache: UrlCache) -> dict:
         return rec
     if res.error:
         rec["reason"] = res.error
-        if res.error.startswith("http_error") or res.error in ("provider_not_configured",):
+        if res.error.startswith("http_error") or res.error in ("provider_not_configured", "empty_dataset"):
             return rec  # transient/config: do not cache
     else:
         data, status, reason = normalize(source, res.items)
