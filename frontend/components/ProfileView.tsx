@@ -58,6 +58,7 @@ export default function ProfileView({
   base?: string;
 }) {
   const gap = Math.round(profile.persona_gap.score * 100);
+  const bothSources = profile.source_status.linkedin !== "not_readable" && profile.source_status.instagram !== "not_readable";
   const idm = Math.round(profile.identity_match.score * 100);
   const lowIdentity = profile.identity_match.score < 0.6;
   return (
@@ -104,7 +105,7 @@ export default function ProfileView({
         )}
       </Card>
 
-      <Card title="Public self vs. off-duty self" right={<Badge tone={gap >= 50 ? "amber" : "stone"}>Gap {gap}%</Badge>}>
+      <Card title="Public self vs. off-duty self" right={bothSources ? <Badge tone={gap >= 50 ? "amber" : "stone"}>Gap {gap}%</Badge> : <Badge tone="stone">Not enough data</Badge>}>
         <div className="grid gap-3 sm:grid-cols-2">
           {([
             ["linkedin", "LinkedIn persona", profile.linkedin_persona],
@@ -124,9 +125,11 @@ export default function ProfileView({
             </div>
           ))}
         </div>
-        <div className="mt-3 h-2 overflow-hidden rounded-full bg-stone-200" aria-hidden>
-          <div className="h-full rounded-full bg-gradient-to-r from-sky-400 to-pink-500" style={{ width: `${gap}%` }} />
-        </div>
+        {!bothSources ? null : (
+          <div className="mt-3 h-2 overflow-hidden rounded-full bg-stone-200" aria-hidden>
+            <div className="h-full rounded-full bg-gradient-to-r from-sky-400 to-pink-500" style={{ width: `${gap}%` }} />
+          </div>
+        )}
         <p className="mt-2 text-sm text-stone-600">{profile.persona_gap.description}</p>
       </Card>
 
