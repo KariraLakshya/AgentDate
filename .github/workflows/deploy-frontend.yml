@@ -1,0 +1,40 @@
+name: deploy-frontend
+
+# Deploys the Next.js app to Vercel on every push that touches frontend/ or the demo data.
+# Needs repository secret VERCEL_TOKEN (vercel.com/account/tokens) plus the IDs set below as variables.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "frontend/**"
+      - "data/demo/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Skip when the token is not configured
+        id: gate
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then echo "VERCEL_TOKEN not set; skipping"; echo "run=false" >> "$GITHUB_OUTPUT"; else echo "run=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Test
+        if: steps.gate.outputs.run == 'true'
+        working-directory: frontend
+        run: npm ci && npm test
+      - name: Deploy to production
+        if: steps.gate.outputs.run == 'true'
+        working-directory: frontend  # the Vercel project was created from this folder
+        run: npx --yes vercel@63 deploy --prod --yes --token "$VERCEL_TOKEN"
