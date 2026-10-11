@@ -68,6 +68,7 @@ export default function LiveRankings({ id }: { id: string }) {
       order={pool.data?.order ?? []}
       matrixFor={matrixFor}
       stablePairs={pool.data?.stable_pairs ?? []}
+      stable={(pool.data as { stable?: boolean } | null)?.stable}
       briefing={brief.data}
       onAsk={onAsk}
     />

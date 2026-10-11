@@ -22,6 +22,7 @@ export default function RankingsView({
   order,
   matrixFor,
   stablePairs,
+  stable,
   briefing,
   onAsk,
   base = "",
@@ -34,6 +35,8 @@ export default function RankingsView({
   /** Matrix for the current weights (re-computed client-side) or a static matrix. */
   matrixFor: (w: Weights) => (number | null)[][];
   stablePairs: [string, string][];
+  /** false when the backend found no fully stable matching and fell back to greedy pairing */
+  stable?: boolean;
   briefing?: Briefing | null;
   onAsk?: (question: string) => Promise<string>;
   base?: string;
@@ -106,6 +109,9 @@ export default function RankingsView({
       </Card>
 
       <Card title="Stable pairings (Gale-Shapley)">
+        {stable === false && (
+          <p className="mb-2 rounded-lg bg-amber-50 p-2 text-xs text-amber-800">No fully stable matching exists for these scores, so these pairings are a best-effort fallback.</p>
+        )}
         {stablePairs.length === 0 ? (
           <Empty>No pairings computed yet.</Empty>
         ) : (
