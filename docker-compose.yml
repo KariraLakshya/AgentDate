@@ -2,21 +2,29 @@ services:
   postgres:
     image: postgres:16
     environment: {POSTGRES_USER: dating, POSTGRES_PASSWORD: dating, POSTGRES_DB: dating}
-    volumes: ["./backend/db/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro"]
+    volumes:
+      - ./backend/db/schema.sql:/docker-entrypoint-initdb.d/001_schema.sql:ro
+      - ./backend/db/migrations/001_url_cache.sql:/docker-entrypoint-initdb.d/002_url_cache.sql:ro
     ports: ["5432:5432"]
   redis:
     image: redis:7
     ports: ["6379:6379"]
   backend:
     build: ./backend
-    env_file: .env
+    env_file:
+      - path: .env
+        required: false
+    environment: {DATABASE_URL: "postgresql://dating:dating@postgres:5432/dating", REDIS_URL: "redis://redis:6379/0", PYTHONPATH: /app}
     depends_on: [postgres, redis]
     ports: ["8000:8000"]
     volumes: ["./data:/app/data"]
   worker:
     build: ./backend
-    command: rq worker --url redis://redis:6379/0
-    env_file: .env
+    command: rq worker dating --url redis://redis:6379/0
+    env_file:
+      - path: .env
+        required: false
+    environment: {DATABASE_URL: "postgresql://dating:dating@postgres:5432/dating", REDIS_URL: "redis://redis:6379/0", PYTHONPATH: /app}
     depends_on: [redis, postgres]
     volumes: ["./data:/app/data"]
   frontend:
