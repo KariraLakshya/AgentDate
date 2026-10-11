@@ -1,0 +1,34 @@
+{
+  "id": "p25",
+  "display_name": "Kit Marchetti",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Localization project manager | Wordloom",
+    "about": "I coordinate translators and keep multilingual releases on schedule. I am curious about language learning and I listen to a lot of podcasts. I like to travel when I can and I read in the evenings. Looking for someone who is curious and kind.",
+    "location": "Reading, United Kingdom",
+    "experience": [
+      {
+        "title": "Localization Project Manager",
+        "company": "Wordloom",
+        "description": "Coordinate translators and releases across nine languages."
+      },
+      {
+        "title": "Project Coordinator",
+        "company": "Kestrel & Bone Translations",
+        "description": "Managed vendor schedules."
+      }
+    ],
+    "skills": [
+      "Localization",
+      "Project management",
+      "Language learning",
+      "Vendor management"
+    ]
+  },
+  "instagram": {
+    "bio": "Mostly lurking.",
+    "location": "Reading, United Kingdom",
+    "posts": []
+  }
+}

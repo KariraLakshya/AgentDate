@@ -1,0 +1,47 @@
+{
+  "id": "p06",
+  "display_name": "Cassius Roe",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Event photographer | Roe & Lantern",
+    "about": "I photograph weddings, launches and festivals. I tell stories with a camera and I am a warm, chatty person who remembers everyone's names. I travel as much as I can, I love film cameras, and I am a night owl by trade. Looking for a partner in crime for road trips and late dinners.",
+    "location": "Brighton, United Kingdom",
+    "experience": [
+      {
+        "title": "Founder, Photographer",
+        "company": "Roe & Lantern",
+        "description": "Run a two-person studio covering events across the south coast."
+      },
+      {
+        "title": "Assistant Photographer",
+        "company": "Sable Frame Co",
+        "description": "Shot 60 events a year."
+      }
+    ],
+    "skills": [
+      "Photography",
+      "Storytelling",
+      "Client relations",
+      "Editing"
+    ]
+  },
+  "instagram": {
+    "bio": "Film cameras, long road trips, late dinners.",
+    "location": "Brighton, United Kingdom",
+    "posts": [
+      {
+        "caption": "35mm roll from the coast road trip, finally developed. Worth the wait."
+      },
+      {
+        "caption": "Late-night edit session after the festival. Midnight snacks are a professional requirement."
+      },
+      {
+        "caption": "Backpacking through Portugal next month. Recommendations welcome!"
+      },
+      {
+        "caption": "Shot a gig tonight and the crowd was unreal."
+      }
+    ]
+  }
+}

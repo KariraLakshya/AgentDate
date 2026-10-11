@@ -1,0 +1,47 @@
+{
+  "id": "p20",
+  "display_name": "Lucan Pryor",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Urban planner | Brindlemoor City Council",
+    "about": "I plan walkable neighbourhoods and public transit. I am direct, a bit of a history and architecture nerd, and I love a good debate about cities. I cycle everywhere and I value community and honest disagreement. Looking for someone who will argue about transit over brunch.",
+    "location": "Liverpool, United Kingdom",
+    "experience": [
+      {
+        "title": "Senior Urban Planner",
+        "company": "Brindlemoor City Council",
+        "description": "Lead walkable neighbourhood and transit schemes."
+      },
+      {
+        "title": "Planning Officer",
+        "company": "Sandstone Borough",
+        "description": "Reviewed applications and ran community consultations."
+      }
+    ],
+    "skills": [
+      "Urban planning",
+      "Public engagement",
+      "GIS",
+      "Transit"
+    ]
+  },
+  "instagram": {
+    "bio": "Bikes, brutalism and bus lanes. Debate welcome.",
+    "location": "Liverpool, United Kingdom",
+    "posts": [
+      {
+        "caption": "Cycling across the city to look at brutalist buildings. Architecture is free to look at."
+      },
+      {
+        "caption": "Museum afternoon, then a debate over brunch about trams."
+      },
+      {
+        "caption": "Walkable streets are a community choice. Fight me politely."
+      },
+      {
+        "caption": "Local history walk with the neighbourhood society. Surprisingly packed!"
+      }
+    ]
+  }
+}

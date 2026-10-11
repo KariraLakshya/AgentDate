@@ -1,0 +1,47 @@
+{
+  "id": "p05",
+  "display_name": "Linnea Aldous",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Brand designer | Harbour & Pine",
+    "about": "I design identities for independent shops and cafes. Creativity and kindness matter most to me, in work and in life. I paint watercolours to unwind and I need a creative outlet or I get restless. I would like a partner who makes things too and is happy to wander flea markets on a Saturday.",
+    "location": "Edinburgh, United Kingdom",
+    "experience": [
+      {
+        "title": "Brand Designer",
+        "company": "Harbour & Pine",
+        "description": "Lead visual identity projects for small businesses."
+      },
+      {
+        "title": "Junior Designer",
+        "company": "Inkwell Collective",
+        "description": "Layouts, typography and packaging."
+      }
+    ],
+    "skills": [
+      "Brand identity",
+      "Typography",
+      "Illustration",
+      "Client workshops"
+    ]
+  },
+  "instagram": {
+    "bio": "Watercolours, thrifted jumpers, terrible at finishing sketchbooks.",
+    "location": "Edinburgh, United Kingdom",
+    "posts": [
+      {
+        "caption": "New watercolour postcards. I am terrible at stopping once I start."
+      },
+      {
+        "caption": "Flea market haul: vintage tins, a teapot, zero self-control."
+      },
+      {
+        "caption": "Sketching on the train again. Kind strangers keep complimenting it, which is nice."
+      },
+      {
+        "caption": "Studio plants have won the war against my desk."
+      }
+    ]
+  }
+}

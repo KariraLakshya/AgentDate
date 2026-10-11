@@ -1,0 +1,47 @@
+{
+  "id": "p23",
+  "display_name": "Aurelio Vance",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Architect | Vance Pell Studio",
+    "about": "I design small civic buildings and renovations. I am wry, thoughtful and I enjoy history, museums, cinema and photography. I value creativity, integrity and a calm, unhurried life. Looking for someone who likes a long film, a museum afternoon and honest, thoughtful conversation.",
+    "location": "York, United Kingdom",
+    "experience": [
+      {
+        "title": "Architect",
+        "company": "Vance Pell Studio",
+        "description": "Lead design on civic buildings and heritage renovations."
+      },
+      {
+        "title": "Architectural Assistant",
+        "company": "Slate Row Partners",
+        "description": "Drawings and site visits."
+      }
+    ],
+    "skills": [
+      "Architecture",
+      "Design",
+      "Heritage",
+      "Photography"
+    ]
+  },
+  "instagram": {
+    "bio": "Buildings, films, quiet museums.",
+    "location": "York, United Kingdom",
+    "posts": [
+      {
+        "caption": "Museum afternoon and a cinema double bill. Calm, unhurried, perfect."
+      },
+      {
+        "caption": "Photography walk through a brutalist estate. Wry smiles from passers-by."
+      },
+      {
+        "caption": "Heritage site visit, history in every brick."
+      },
+      {
+        "caption": "Cosy evening in with an old film and a pot of tea."
+      }
+    ]
+  }
+}

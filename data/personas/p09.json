@@ -1,0 +1,47 @@
+{
+  "id": "p09",
+  "display_name": "Gideon Marsh-Calloway",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Head of cyber risk | Ironbark Systems",
+    "about": "I lead a strategic security programme and report to enterprise stakeholders. I deliver scalable controls and a clear roadmap across cross-functional teams. I value independence, integrity and routine, and I protect my alone time.",
+    "location": "London, United Kingdom",
+    "experience": [
+      {
+        "title": "Head of Cyber Risk",
+        "company": "Ironbark Systems",
+        "description": "Lead the enterprise security roadmap and manage stakeholders across 12 business units."
+      },
+      {
+        "title": "Security Consultant",
+        "company": "Larkfield Assurance",
+        "description": "Delivered strategic risk reviews for clients."
+      }
+    ],
+    "skills": [
+      "Cybersecurity",
+      "Risk strategy",
+      "Stakeholder management",
+      "Governance"
+    ]
+  },
+  "instagram": {
+    "bio": "goblin hours only lol. Cooking chaos and video games.",
+    "location": "London, United Kingdom",
+    "posts": [
+      {
+        "caption": "Burnt the risotto again, absolute chaos in the kitchen haha!!"
+      },
+      {
+        "caption": "Speedrun attempt number 40 tonight. Send help lol."
+      },
+      {
+        "caption": "Memes are my love language and my cat is unhinged."
+      },
+      {
+        "caption": "Cooked a recipe from a video game. It looked unhinged and tasted great!!"
+      }
+    ]
+  }
+}

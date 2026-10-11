@@ -1,0 +1,32 @@
+{
+  "id": "p19",
+  "display_name": "Carys Bellamy",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Paediatric nurse | Larkspur General Hospital",
+    "about": "I work on a children's ward and I care about kindness and teamwork. I volunteer with a local community group and knit for charity.",
+    "location": "Cardiff, United Kingdom",
+    "experience": [
+      {
+        "title": "Paediatric Nurse",
+        "company": "Larkspur General Hospital",
+        "description": "Care for children on a busy ward and support families."
+      }
+    ],
+    "skills": [
+      "Nursing",
+      "Teamwork",
+      "Communication"
+    ]
+  },
+  "instagram": {
+    "bio": "Tea and yarn.",
+    "location": "Cardiff, United Kingdom",
+    "posts": [
+      {
+        "caption": "Knitting between shifts."
+      }
+    ]
+  }
+}

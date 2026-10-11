@@ -1,0 +1,47 @@
+{
+  "id": "p21",
+  "display_name": "Margit Sorrel",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Investment analyst | Halvorsen Crane Capital",
+    "about": "I analyse mid-cap companies and deliver strategic recommendations to stakeholders. I am ambitious, driven and travel for work most months. I value discipline and a clear plan, and I keep my calendar tightly organised.",
+    "location": "London, United Kingdom",
+    "experience": [
+      {
+        "title": "Investment Analyst",
+        "company": "Halvorsen Crane Capital",
+        "description": "Deliver strategic equity research; frequent flyer on the conference circuit."
+      },
+      {
+        "title": "Graduate Analyst",
+        "company": "Brackenridge Partners",
+        "description": "Financial modelling and investor reports."
+      }
+    ],
+    "skills": [
+      "Financial modelling",
+      "Equity research",
+      "Presentation",
+      "Valuation"
+    ]
+  },
+  "instagram": {
+    "bio": "Vintage finds, karaoke, zero chill. lol",
+    "location": "London, United Kingdom",
+    "posts": [
+      {
+        "caption": "Thrift haul: a velvet blazer for four pounds. Vintage forever haha!"
+      },
+      {
+        "caption": "Karaoke night: chaos, glitter and a bad Abba cover."
+      },
+      {
+        "caption": "Dancing till they turned the lights on, no regrets!!"
+      },
+      {
+        "caption": "Flea market Sunday, vibes immaculate."
+      }
+    ]
+  }
+}

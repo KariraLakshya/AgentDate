@@ -1,0 +1,47 @@
+{
+  "id": "p22",
+  "display_name": "Zephyr Lund",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Co-founder & CEO | Nimbus Larder",
+    "about": "I lead a scalable marketplace business and deliver on an ambitious roadmap. I align stakeholders, raise venture capital and run cross-functional teams. I am driven, direct and always chasing growth.",
+    "location": "London, United Kingdom",
+    "experience": [
+      {
+        "title": "Co-founder & CEO",
+        "company": "Nimbus Larder",
+        "description": "Own strategy, fundraising and a scalable roadmap for an enterprise marketplace."
+      },
+      {
+        "title": "Strategy Manager",
+        "company": "Orchard Row Ventures",
+        "description": "Delivered KPIs across portfolio startups."
+      }
+    ],
+    "skills": [
+      "Strategy",
+      "Fundraising",
+      "Leadership",
+      "Marketplaces"
+    ]
+  },
+  "instagram": {
+    "bio": "surf, video games, goblin energy lol",
+    "location": "Newquay, United Kingdom",
+    "posts": [
+      {
+        "caption": "Surf trip chaos haha, lost a board and found a friend!!"
+      },
+      {
+        "caption": "Speedrun marathon on the couch. Unhinged and proud."
+      },
+      {
+        "caption": "Gaming night memes and takeaway lol."
+      },
+      {
+        "caption": "Back at the beach at sunrise, paddle boarding vibes."
+      }
+    ]
+  }
+}

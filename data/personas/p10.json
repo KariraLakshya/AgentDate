@@ -1,0 +1,47 @@
+{
+  "id": "p10",
+  "display_name": "Thalia Brightwater",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Research technician | Saltmarsh Institute",
+    "about": "I monitor coastal ecosystems and write up field data for conservation teams. I am energetic, kind and happiest outdoors, and I never sit still for long. I surf and kayak whenever the tide allows, and I value adventure and community. Looking for someone who is up for spontaneous coast trips.",
+    "location": "Plymouth, United Kingdom",
+    "experience": [
+      {
+        "title": "Research Technician",
+        "company": "Saltmarsh Institute",
+        "description": "Run field surveys on wildlife and tidal ecology."
+      },
+      {
+        "title": "Field Assistant",
+        "company": "Gullcrest Trust",
+        "description": "Collected samples and data on estuary conservation projects."
+      }
+    ],
+    "skills": [
+      "Field surveys",
+      "Ecology",
+      "Data collection",
+      "Kayaking"
+    ]
+  },
+  "instagram": {
+    "bio": "Waves at dawn, kayak by lunch. Always on the move.",
+    "location": "Plymouth, United Kingdom",
+    "posts": [
+      {
+        "caption": "Surf at sunrise, 6am start and no regrets. Cold water, warm tea."
+      },
+      {
+        "caption": "Kayaked out to see the seals. Wildlife is the best company."
+      },
+      {
+        "caption": "Beach clean-up with the local crew. Community feels good."
+      },
+      {
+        "caption": "Adventure weekend, hiking the coast path in the sunshine!"
+      }
+    ]
+  }
+}

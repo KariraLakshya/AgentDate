@@ -1,0 +1,47 @@
+{
+  "id": "p12",
+  "display_name": "Nadia Collister",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Data analyst | Lumenreach Analytics",
+    "about": "I turn messy data into useful dashboards for retail clients. I am organised, evidence-minded and I plan ahead, but I laugh when plans fall apart. I run three mornings a week and I listen to a lot of podcasts about statistics and money. Looking for someone who plans ahead and still enjoys a surprise.",
+    "location": "Birmingham, United Kingdom",
+    "experience": [
+      {
+        "title": "Data Analyst",
+        "company": "Lumenreach Analytics",
+        "description": "Build dashboards and statistics reports for retail clients."
+      },
+      {
+        "title": "Insights Intern",
+        "company": "Ravenscroft Retail",
+        "description": "Cleaned data and helped plan budget forecasts."
+      }
+    ],
+    "skills": [
+      "SQL",
+      "Dashboards",
+      "Statistics",
+      "Budgeting"
+    ]
+  },
+  "instagram": {
+    "bio": "Running, spreadsheets, podcasts. Not always in that order.",
+    "location": "Birmingham, United Kingdom",
+    "posts": [
+      {
+        "caption": "Morning run done, podcast finished. Productive start."
+      },
+      {
+        "caption": "Planned the whole weekend ahead in a spreadsheet. Then the plan fell apart, haha, best day ever."
+      },
+      {
+        "caption": "Park run PB! Small wins keep me going."
+      },
+      {
+        "caption": "Budget night with tea and a good podcast about statistics."
+      }
+    ]
+  }
+}

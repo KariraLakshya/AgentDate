@@ -1,0 +1,47 @@
+{
+  "id": "p18",
+  "display_name": "Dominic Achterberg",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Secondary school maths teacher | Eastbrook Academy",
+    "about": "I teach maths and run the chess club. I mentor younger teachers, I am patient and kind, and I tell dad jokes that students pretend to hate. Community and fairness matter to me and I volunteer as a youth coach. I would like a partner who enjoys board games and honest, thoughtful conversation.",
+    "location": "Coventry, United Kingdom",
+    "experience": [
+      {
+        "title": "Maths Teacher",
+        "company": "Eastbrook Academy",
+        "description": "Teach ages 11 to 18 and mentor new colleagues."
+      },
+      {
+        "title": "Teaching Assistant",
+        "company": "Hollin Park School",
+        "description": "Supported small groups and ran a chess club."
+      }
+    ],
+    "skills": [
+      "Teaching",
+      "Mentoring",
+      "Curriculum planning",
+      "Chess"
+    ]
+  },
+  "instagram": {
+    "bio": "Chess club, dad jokes, marking piles.",
+    "location": "Coventry, United Kingdom",
+    "posts": [
+      {
+        "caption": "Chess club tournament today. Dad joke count: seven. Groans: seven."
+      },
+      {
+        "caption": "Board games night with colleagues, I lost on purpose. Mostly."
+      },
+      {
+        "caption": "Volunteering as a youth coach on Saturdays, the best part of the week."
+      },
+      {
+        "caption": "Marking piles and tea. The glamour never ends."
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p08",
+  "display_name": "Odalys Pemberton",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Machine learning engineer | Cobaltwick AI",
+    "about": "I build ranking models and evaluate them with care. I am analytical, precise and endlessly curious, and I enjoy a good argument about the best opening in a board game. I read a lot of sci-fi, I like to stay in on weeknights, and I value honest, direct people. Looking for someone who enjoys deep conversations and a rematch.",
+    "location": "Cambridge, United Kingdom",
+    "experience": [
+      {
+        "title": "Machine Learning Engineer",
+        "company": "Cobaltwick AI",
+        "description": "Train and evaluate ranking models on large data sets."
+      },
+      {
+        "title": "Data Scientist",
+        "company": "Pellucid Metrics",
+        "description": "Built forecasting pipelines and dashboards."
+      }
+    ],
+    "skills": [
+      "Machine learning",
+      "Python",
+      "Data analysis",
+      "Experiment design"
+    ]
+  },
+  "instagram": {
+    "bio": "Board games, sci-fi paperbacks, dry jokes about overfitting.",
+    "location": "Cambridge, United Kingdom",
+    "posts": [
+      {
+        "caption": "Board game night at mine. Dry humour is encouraged, table flipping is not."
+      },
+      {
+        "caption": "Finished another sci-fi trilogy. The ending was predictable and I loved it."
+      },
+      {
+        "caption": "Staying in with tea and a half-built puzzle. Peak weekend."
+      },
+      {
+        "caption": "Deep conversations beat small talk, every single time."
+      }
+    ]
+  }
+}

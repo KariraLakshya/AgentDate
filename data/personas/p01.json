@@ -1,0 +1,47 @@
+{
+  "id": "p01",
+  "display_name": "Maren Valcourt",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Senior structural engineer | Tallowgate Engineering",
+    "about": "I design footbridges and small public buildings. I am direct and honest about risk, and I value people who say what they mean. I climb most weekends and I need to get outside to think clearly. Looking for someone who will happily get up at 5am for a sunrise summit.",
+    "location": "Sheffield, United Kingdom",
+    "experience": [
+      {
+        "title": "Senior Structural Engineer",
+        "company": "Tallowgate Engineering",
+        "description": "Lead design on footbridges and community buildings, mentoring two graduate engineers."
+      },
+      {
+        "title": "Structural Engineer",
+        "company": "Ashgrove Consulting",
+        "description": "Delivered load calculations for schools and libraries."
+      }
+    ],
+    "skills": [
+      "Structural design",
+      "Risk assessment",
+      "Mentoring",
+      "Technical drawing"
+    ]
+  },
+  "instagram": {
+    "bio": "Rope, rock and flasks of tea. Bouldering before breakfast.",
+    "location": "Sheffield, United Kingdom",
+    "posts": [
+      {
+        "caption": "Sent my project at the quarry today. Dry humour optional, tea mandatory."
+      },
+      {
+        "caption": "Sunrise summit in the Peak District, up at 5am again. Fresh air fixes everything."
+      },
+      {
+        "caption": "Weekend hike with the crew, then a long cosy pub lunch."
+      },
+      {
+        "caption": "Honest review of my new climbing shoes: they hurt and I love them."
+      }
+    ]
+  }
+}

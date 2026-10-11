@@ -1,0 +1,47 @@
+{
+  "id": "p11",
+  "display_name": "Emeric Doyle-Santos",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Firmware engineer | Gearwhistle Robotics",
+    "about": "I write firmware for small robots and contribute to open source projects. I am independent, deadpan and happiest at a workbench with a soldering iron. I need quiet time to recharge, so I usually stay in on weeknights. I would like a partner who is comfortable with comfortable silence.",
+    "location": "Cardiff, United Kingdom",
+    "experience": [
+      {
+        "title": "Firmware Engineer",
+        "company": "Gearwhistle Robotics",
+        "description": "Embedded C and robotics control loops; maintain an open source motor library."
+      },
+      {
+        "title": "Electronics Technician",
+        "company": "Pennant Circuits",
+        "description": "Prototyping and test rigs."
+      }
+    ],
+    "skills": [
+      "Embedded C",
+      "Robotics",
+      "Electronics",
+      "Open source"
+    ]
+  },
+  "instagram": {
+    "bio": "Soldering iron, 3d printer, deadpan memes.",
+    "location": "Cardiff, United Kingdom",
+    "posts": [
+      {
+        "caption": "Finished the robot arm. It waved back. I am calling that a win."
+      },
+      {
+        "caption": "Woodworking weekend: shelves for the workshop. Staying in, the measurements are the whole mood."
+      },
+      {
+        "caption": "Deadpan reaction to a PCB I spent 6 hours on: it works."
+      },
+      {
+        "caption": "Quiet night, soldering, podcast. Recharging."
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p24",
+  "display_name": "Rosalind Teague",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Supply chain manager | Gantry & Co Logistics",
+    "about": "I manage supply chain operations for a national distributor. I deliver strategic improvements, leverage data and keep stakeholders aligned. I am organised, driven and focused on stability and routine.",
+    "location": "Nottingham, United Kingdom",
+    "experience": [
+      {
+        "title": "Supply Chain Manager",
+        "company": "Gantry & Co Logistics",
+        "description": "Lead operations and strategic planning across six depots."
+      },
+      {
+        "title": "Logistics Coordinator",
+        "company": "Marsh Lane Freight",
+        "description": "Scheduling and vendor management."
+      }
+    ],
+    "skills": [
+      "Supply chain",
+      "Logistics",
+      "Planning",
+      "Vendor management"
+    ]
+  },
+  "instagram": {
+    "bio": "Salsa on Fridays, festivals all summer, backpack always packed.",
+    "location": "Nottingham, United Kingdom",
+    "posts": [
+      {
+        "caption": "Salsa social last night, dancing until close!"
+      },
+      {
+        "caption": "Festival weekend, camping with the best crew. Spontaneous plans only!"
+      },
+      {
+        "caption": "Backpacking through Colombia next month, itchy feet again."
+      },
+      {
+        "caption": "Brunch, dancing, repeat. Adventure over spreadsheets."
+      }
+    ]
+  }
+}

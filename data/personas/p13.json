@@ -1,0 +1,47 @@
+{
+  "id": "p13",
+  "display_name": "Ottoline Crane",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Technical writer | Paperkite Software",
+    "about": "I explain complicated software in plain words. I am quiet, thoughtful and I listen first. I write poetry and zines on the side, and I am a night owl who does her best work after dark. Looking for a gentle, curious person who enjoys book clubs and long conversations.",
+    "location": "Oxford, United Kingdom",
+    "experience": [
+      {
+        "title": "Technical Writer",
+        "company": "Paperkite Software",
+        "description": "Write documentation and tutorials for developers."
+      },
+      {
+        "title": "Copy Editor",
+        "company": "Marginalia Press",
+        "description": "Edited non-fiction manuscripts."
+      }
+    ],
+    "skills": [
+      "Technical writing",
+      "Editing",
+      "Documentation",
+      "Poetry"
+    ]
+  },
+  "instagram": {
+    "bio": "Zines, poetry, bookshops. Whimsical at midnight.",
+    "location": "Oxford, United Kingdom",
+    "posts": [
+      {
+        "caption": "New zine out. Whimsical, small, printed at midnight."
+      },
+      {
+        "caption": "Book club picked a novel I loved and a poem I want to frame."
+      },
+      {
+        "caption": "Cafe corner, notebook, rain on the window. Staying here all day."
+      },
+      {
+        "caption": "Introvert approved evening: poetry reading and nobody asked me to speak."
+      }
+    ]
+  }
+}

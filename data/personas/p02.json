@@ -1,0 +1,47 @@
+{
+  "id": "p02",
+  "display_name": "Idris Brannock",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Operations lead | Fernhollow Labs",
+    "about": "I run operations for a small research tools company. I like clear structure, good routines and data that backs up a decision. Outside work I train for trail running marathons and I am an early riser by habit. I want a partner who respects a 5am alarm and still loves a long Sunday brunch.",
+    "location": "Leeds, United Kingdom",
+    "experience": [
+      {
+        "title": "Operations Lead",
+        "company": "Fernhollow Labs",
+        "description": "Own planning, vendor management and weekly reporting across a team of eight."
+      },
+      {
+        "title": "Operations Analyst",
+        "company": "Kestrel Mills Group",
+        "description": "Built dashboards and trimmed delivery times by 14 percent."
+      }
+    ],
+    "skills": [
+      "Operations",
+      "Process design",
+      "Data reporting",
+      "Team leadership"
+    ]
+  },
+  "instagram": {
+    "bio": "Trail miles, tidy spreadsheets, strong coffee. Marathon block in progress.",
+    "location": "Leeds, United Kingdom",
+    "posts": [
+      {
+        "caption": "Morning run before sunrise, 28km on the moors. The training plan does not care about the weather."
+      },
+      {
+        "caption": "Rest day brunch with friends. Pancakes are recovery food, it is science."
+      },
+      {
+        "caption": "Race number collected. Nervous, excited, over-prepared as usual."
+      },
+      {
+        "caption": "Sunday meal prep: colour-coded containers, no regrets."
+      }
+    ]
+  }
+}

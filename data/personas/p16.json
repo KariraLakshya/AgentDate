@@ -1,0 +1,47 @@
+{
+  "id": "p16",
+  "display_name": "Soren Tilbury",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Founder | Ember & Oak Roasters",
+    "about": "I co-founded a small coffee roastery and I am obsessed with the craft. I am driven, warm and love a buzzy room, and I host regular tastings at the roastery. I collect vinyl and I cycle to work in all weathers. Looking for someone with ambition who also enjoys a lazy morning with great coffee.",
+    "location": "Bristol, United Kingdom",
+    "experience": [
+      {
+        "title": "Co-founder",
+        "company": "Ember & Oak Roasters",
+        "description": "Roast, sell and train baristas; grew revenue to 40 wholesale accounts."
+      },
+      {
+        "title": "Barista Trainer",
+        "company": "Copperfield Cafes",
+        "description": "Trained staff on espresso and service."
+      }
+    ],
+    "skills": [
+      "Coffee roasting",
+      "Entrepreneurship",
+      "Training",
+      "Sales"
+    ]
+  },
+  "instagram": {
+    "bio": "Coffee, vinyl, bikes. Buzzing since 6am.",
+    "location": "Bristol, United Kingdom",
+    "posts": [
+      {
+        "caption": "Tasting night at the roastery. Espresso flights and good company."
+      },
+      {
+        "caption": "Cycling to the market with a boot full of beans. Ship it, then nap."
+      },
+      {
+        "caption": "Vinyl swap Sunday. Brunch, records, repeat."
+      },
+      {
+        "caption": "New blend dropped and the energy in the room was unreal!"
+      }
+    ]
+  }
+}

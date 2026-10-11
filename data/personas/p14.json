@@ -1,0 +1,47 @@
+{
+  "id": "p14",
+  "display_name": "Bastian Quist",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Head baker | Crumbwell Bakehouse",
+    "about": "I run a neighbourhood bakery and lead a team of five. I get up before dawn, I am always on the move, and I am a goofy storyteller who loves hosting dinner parties. Food, hospitality and generosity are what I care about most. Looking for someone who enjoys a big table and a loud brunch.",
+    "location": "Bath, United Kingdom",
+    "experience": [
+      {
+        "title": "Head Baker",
+        "company": "Crumbwell Bakehouse",
+        "description": "Lead sourdough and pastry production, buzzing from 3am to noon."
+      },
+      {
+        "title": "Pastry Cook",
+        "company": "Elderflower Kitchen",
+        "description": "Prepared desserts for a busy restaurant."
+      }
+    ],
+    "skills": [
+      "Baking",
+      "Sourdough",
+      "Team leadership",
+      "Hospitality"
+    ]
+  },
+  "instagram": {
+    "bio": "Sourdough, puns and a table that is always too full.",
+    "location": "Bath, United Kingdom",
+    "posts": [
+      {
+        "caption": "Dawn bake: 120 loaves and a pun for every one. Rise and shine, literally."
+      },
+      {
+        "caption": "Hosting dinner tonight, twelve people and zero chairs. Perfect."
+      },
+      {
+        "caption": "New recipe for cardamom buns. Goofy name, serious flavour."
+      },
+      {
+        "caption": "Sunday brunch with the staff. Kindness is the secret ingredient."
+      }
+    ]
+  }
+}

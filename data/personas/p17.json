@@ -1,0 +1,47 @@
+{
+  "id": "p17",
+  "display_name": "Imogen Fairweather",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Ecologist | Marshlight Conservation Trust",
+    "about": "I survey wetland birds and advise on habitat management. I am gentle, patient and calm, and I work best outdoors. I love birdwatching, photography and long hikes at dawn. I need quiet time to recharge, and I am looking for someone who listens first and enjoys nature.",
+    "location": "Norwich, United Kingdom",
+    "experience": [
+      {
+        "title": "Ecologist",
+        "company": "Marshlight Conservation Trust",
+        "description": "Run bird surveys and write management plans for wetlands."
+      },
+      {
+        "title": "Field Officer",
+        "company": "Reedbed Wildlife Group",
+        "description": "Habitat mapping and volunteer coordination."
+      }
+    ],
+    "skills": [
+      "Ecology",
+      "Bird surveys",
+      "Habitat management",
+      "Photography"
+    ]
+  },
+  "instagram": {
+    "bio": "Early birds, early starts. Quietly happy outdoors.",
+    "location": "Norwich, United Kingdom",
+    "posts": [
+      {
+        "caption": "Dawn hike to the hide, 5am and worth every yawn. Bittern heard, not seen."
+      },
+      {
+        "caption": "Photography test with the new lens. Marsh harrier in the golden light."
+      },
+      {
+        "caption": "Quiet cosy night in with field notes and tea."
+      },
+      {
+        "caption": "Volunteered at the reserve work party. Muddy and content."
+      }
+    ]
+  }
+}

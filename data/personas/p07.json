@@ -1,0 +1,47 @@
+{
+  "id": "p07",
+  "display_name": "Briar Quennell",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Live sound engineer | Static Orchard Audio",
+    "about": "I mix live bands in small venues and I record in a home studio. I am a night owl with a dry, absurdist sense of humour and I stay loyal to the friends and bands I believe in. I play guitar badly and listen to vinyl obsessively. Looking for someone who shows up for friends and loves a gig as much as I do.",
+    "location": "Glasgow, United Kingdom",
+    "experience": [
+      {
+        "title": "Live Sound Engineer",
+        "company": "Static Orchard Audio",
+        "description": "Front-of-house mixing for 150 shows a year."
+      },
+      {
+        "title": "Stage Technician",
+        "company": "Foxglove Venues",
+        "description": "Rigging, monitors and load-ins."
+      }
+    ],
+    "skills": [
+      "Live sound",
+      "Audio engineering",
+      "Troubleshooting",
+      "Guitar"
+    ]
+  },
+  "instagram": {
+    "bio": "Vinyl, gigs, 3am chaos. Guitar optional.",
+    "location": "Glasgow, United Kingdom",
+    "posts": [
+      {
+        "caption": "Another gig survived, ears ringing. The drummer brought a goblin costume for reasons unknown."
+      },
+      {
+        "caption": "Vinyl day haul. My shelf is a structural risk."
+      },
+      {
+        "caption": "Midnight jam in the practice room. Absurd, loud, perfect."
+      },
+      {
+        "caption": "Festival season starts. Pray for my hearing."
+      }
+    ]
+  }
+}

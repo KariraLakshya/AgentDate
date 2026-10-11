@@ -1,0 +1,47 @@
+{
+  "id": "p15",
+  "display_name": "Wren Ashdown",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Sustainability consultant | Greenfold Advisory",
+    "about": "I help councils and small firms cut carbon and plan renewables. I am calm, kind and community-minded, and I care about integrity in climate work. I tend an allotment, volunteer with a local repair cafe and keep a minimalist home. Looking for someone who wants a steady, grounded life and gives back to their community.",
+    "location": "Norwich, United Kingdom",
+    "experience": [
+      {
+        "title": "Sustainability Consultant",
+        "company": "Greenfold Advisory",
+        "description": "Advise councils on carbon reduction and renewables."
+      },
+      {
+        "title": "Analyst",
+        "company": "Fieldmouse Energy",
+        "description": "Modelled energy use for small businesses."
+      }
+    ],
+    "skills": [
+      "Sustainability",
+      "Carbon accounting",
+      "Workshop facilitation",
+      "Report writing"
+    ]
+  },
+  "instagram": {
+    "bio": "Allotment, repair cafe, slow living.",
+    "location": "Norwich, United Kingdom",
+    "posts": [
+      {
+        "caption": "Allotment harvest: courgettes for everyone. Gardening is a calm kind of joy."
+      },
+      {
+        "caption": "Volunteered at the repair cafe, fixed a toaster and a friendship."
+      },
+      {
+        "caption": "Declutter weekend. Minimalist but the plants stay."
+      },
+      {
+        "caption": "Community seed swap today, so many kind faces."
+      }
+    ]
+  }
+}

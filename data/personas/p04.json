@@ -1,0 +1,47 @@
+{
+  "id": "p04",
+  "display_name": "Teodor Wirth",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "Product manager | Marlowe Freight Software",
+    "about": "I manage a product that helps small hauliers plan routes. I am thoughtful, a good listener, and I prefer a calm pace and a clear plan ahead. I need quiet time to recharge after busy weeks, usually at my pottery wheel. I am looking for someone who enjoys slow Sundays and cosy evenings in.",
+    "location": "Manchester, United Kingdom",
+    "experience": [
+      {
+        "title": "Product Manager",
+        "company": "Marlowe Freight Software",
+        "description": "Own the routing roadmap and weekly releases for a team of six."
+      },
+      {
+        "title": "Business Analyst",
+        "company": "Greyfriars Systems",
+        "description": "Wrote requirements and tested workflows with customers."
+      }
+    ],
+    "skills": [
+      "Product management",
+      "Roadmapping",
+      "Stakeholder communication",
+      "Analysis"
+    ]
+  },
+  "instagram": {
+    "bio": "Pottery, filter coffee and the occasional quiet night in.",
+    "location": "Manchester, United Kingdom",
+    "posts": [
+      {
+        "caption": "Wheel-thrown bowls out of the kiln today. Ceramics is patience made visible."
+      },
+      {
+        "caption": "Slow Sunday: coffee, a record on, nowhere to be. Cosy is underrated."
+      },
+      {
+        "caption": "Glaze test tiles. Some work, some are a disaster, all taught me something."
+      },
+      {
+        "caption": "Staying in tonight with a novel and a very large mug."
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p03",
+  "display_name": "Josie Harland-Pike",
+  "synthetic": true,
+  "label": "SYNTHETIC PERSONA - fictional, not a real person",
+  "linkedin": {
+    "headline": "UX researcher | Quillmark Studio",
+    "about": "I study how people actually behave with products and then argue for them with evidence. I am curious about psychology, travel and the stories behind ordinary habits. I bikepack through new places whenever I can and I get itchy feet if I stay put for too long. Hoping to meet someone who is up for spontaneous trips.",
+    "location": "Bristol, United Kingdom",
+    "experience": [
+      {
+        "title": "Senior UX Researcher",
+        "company": "Quillmark Studio",
+        "description": "Lead interview studies and usability tests for consumer apps."
+      },
+      {
+        "title": "Research Associate",
+        "company": "Dovecote Insights",
+        "description": "Ran field studies on commuter behaviour."
+      }
+    ],
+    "skills": [
+      "User research",
+      "Interviewing",
+      "Behavioural psychology",
+      "Workshop facilitation"
+    ]
+  },
+  "instagram": {
+    "bio": "Gravel bike, bad puns, good maps. Packing for the next ride.",
+    "location": "Bristol, United Kingdom",
+    "posts": [
+      {
+        "caption": "Bikepacking weekend in Wales, 160km and one very wet tent. Tent puns are inevitable."
+      },
+      {
+        "caption": "Camping above the clouds. Fresh air, zero signal, perfect."
+      },
+      {
+        "caption": "Planning the next route over way too much coffee. Where should we go?"
+      },
+      {
+        "caption": "Dad jokes are my love language and I will not be taking questions."
+      }
+    ]
+  }
+}
