@@ -143,3 +143,14 @@ def test_demo_healthz_cors(client, monkeypatch, tmp_path):
     assert client.get("/api/demo").status_code == 404
     r = client.options("/api/people", headers={"Origin": "http://x", "Access-Control-Request-Method": "POST"})
     assert r.headers.get("access-control-allow-origin") == "*"
+
+
+def test_date_pool_opponents_restricts_to_chosen_list(client, mem):
+    pid = client.post("/api/people", json=GOOD).json()["person_id"]
+    add_person(mem, "a", "A")
+    add_person(mem, "b", "B")
+    d = client.post(f"/api/people/{pid}/date-pool", json={"opponents": ["b"]}).json()["dates"]
+    assert [x["person_id"] for x in d] == ["b"]
+    assert mem.counts()["date"] == 1
+    assert client.post(f"/api/people/{pid}/date-pool", json={"opponents": "b"}).status_code == 422
+    assert len(client.post(f"/api/people/{pid}/date-pool").json()["dates"]) == 2  # default unchanged

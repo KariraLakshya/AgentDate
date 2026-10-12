@@ -112,9 +112,14 @@ def date_pool(person_id: str, request: Request, payload: dict = Body(default_fac
         raise HTTPException(409, f"Profile not ready (status: {p['status']})")
     _check_rate(request, "pool")
     existing = {d["id"]: d for d in st.list_dates(person_id)}
+    opponents = payload.get("opponents")
+    if opponents is not None and not (isinstance(opponents, list) and all(isinstance(x, str) for x in opponents)):
+        raise HTTPException(422, "opponents must be a list of person ids")
     specs, out = [], []
     for o in st.list_people():
         if o["id"] == person_id or not st.get_profile(o["id"]):
+            continue
+        if opponents is not None and o["id"] not in opponents:
             continue
         did = pipeline.date_id_for(person_id, o["id"])
         cur = existing.get(did)
